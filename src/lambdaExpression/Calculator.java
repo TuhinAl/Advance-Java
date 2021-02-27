@@ -2,23 +2,14 @@ package lambdaExpression;
 
 public interface Calculator {
 
-    double calculateDiv(int a, int b);
+   abstract int calculateDiv(int a, int b);
 }
 
- class CalculatorImpl implements Calculator{
+ class CalculatorImpl{
 
-    Calculator calculator = (int a, int b) -> {
+    public static void main (String [] args){
 
-                    if( b == 0)
-            return 1;
-        else
-
-         return a/b;
-     }
-
-   /* @Override
-    public double calculateDiv(int a, int b) {
-        return 0;
-    }*/
-     ()
-}
+        Calculator calculator = (a,b)-> a/b;
+        System.out.println(calculator.calculateDiv(10,2));
+    }
+ }
