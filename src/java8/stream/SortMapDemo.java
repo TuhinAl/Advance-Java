@@ -1,4 +1,4 @@
-package lambdaExpression.stream;
+package java8.stream;
 
 import lambdaExpression.realObject.Employee;
 import lambdaExpression.realObject.EmployeeDAO;
