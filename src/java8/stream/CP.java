@@ -1,10 +1,12 @@
 package java8.stream;
 
 public class CP {
-    static String superReducedString(String s) {
+    public static String superReducedString(String s) {
 
-        int len = 9;
+        int len = s.length();
+
         System.out.printf("length: ",+len);
+
         for(int i = 0 ; i<len-1; i++){
             if(s.charAt(i) == s.charAt(i+1)){
                 s.replace(s.charAt(i),s.charAt(i+1));
@@ -13,7 +15,7 @@ public class CP {
 
         }
         if(len == 0){
-            return "Empty String";
+            System.out.println("Empty String");
         }
 
         return s;
@@ -22,6 +24,8 @@ public class CP {
 
     public static void main(String[] args) {
         String str = "aaabccddd";
-        CP.superReducedString(str);
+        System.out.println(superReducedString(str));
+
+
     }
 }
