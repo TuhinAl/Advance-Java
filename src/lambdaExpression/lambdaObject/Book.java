@@ -9,9 +9,9 @@ public class Book {
 
     private String name;
     private String author;
-    private String price;
+    private int price;
 
-    public Book(String name, String author, String price) {
+    public Book(String name, String author, int price) {
         this.name = name;
         this.author = author;
         this.price = price;
@@ -33,11 +33,11 @@ public class Book {
         this.author = author;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

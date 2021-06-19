@@ -11,9 +11,9 @@ import java.util.List;
  **/
 public class BookService {
 
-    List<Book> getBookInSort(){
+    static List<Book> getBookInSort(){
         List<Book> list = new BookDAO().getBook();
-        Collections.sort(list, (o1,o2)-> o2.getPrice().compareTo(o1.getPrice()));
+        Collections.sort(list, (o1, o2) -> o2.getName().compareTo(o1.getName()));
         return list;
     }
 
