@@ -9,7 +9,7 @@ public class GenericMethod<T> {
     public static void main(String [] args){
         GenericMethod<String> var1 = new GenericMethod<>();
        // var1
-        int public = 5
+        int p = 5;
     }
 
 }

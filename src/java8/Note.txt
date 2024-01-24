@@ -1,0 +1,5 @@
+1. List to map
+2. List to map(don't allow duplicate key)
+3. sorted and collect.
+4. sort with comparator (Comparator and lambda)
+5.

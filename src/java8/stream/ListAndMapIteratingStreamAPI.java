@@ -42,7 +42,7 @@ public class ListAndMapIteratingStreamAPI {
         clubMap.entrySet()
                 .stream()
                 .filter(p->p.getValue().equals("Barcelona"))
-                .forEach(q -> System.out.println(q));
+                .forEach(System.out::println);
     }
 
 }
