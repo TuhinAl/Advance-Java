@@ -3,6 +3,10 @@ package java8.Optional;
 import java.util.Arrays;
 import java.util.Optional;
 
+/**
+ * @author Tuhin
+ * @version 1.0.1
+ */
 public class OptionalDriverClass {
 
     /*public static List<Customer> getAllCustomer(String email) {
@@ -14,6 +18,11 @@ public class OptionalDriverClass {
         );
     }*/
 
+    /**
+     * @author: Alauddin Tuhin
+     * @param args
+     * @description:normal java codes
+     */
     public static void main(String[] args) {
         Customer customer = new Customer(10, "Nelson Jamal", null, Arrays.asList(
                 "9034589245", "89364589"

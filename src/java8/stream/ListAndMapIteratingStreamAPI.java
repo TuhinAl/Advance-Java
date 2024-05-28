@@ -1,9 +1,6 @@
 package java8.stream;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.function.Supplier;
 
 /**
@@ -38,11 +35,18 @@ public class ListAndMapIteratingStreamAPI {
         clubMap.put(3, "Barcelona");
         clubMap.put(4, "Arsenal");
 
+
         //clubMap.forEach((key,value)-> System.out.println(key +": "+value));
         clubMap.entrySet()
                 .stream()
-                .filter(p->p.getValue().equals("Barcelona"))
+                .filter(p -> p.getValue().equals("Barcelona"))
                 .forEach(System.out::println);
+
+
+        List<Integer> teamRankList = new ArrayList<>(clubMap.keySet());
+        List<String> teamNameList = new ArrayList<>(clubMap.values());
+        teamRankList.forEach(System.out::println);
+        teamNameList.forEach(System.out::println);
     }
 
 }
