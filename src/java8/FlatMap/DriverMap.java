@@ -1,6 +1,9 @@
 package java8.FlatMap;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class DriverMap {
@@ -15,9 +18,14 @@ public class DriverMap {
 
         System.out.println(phone);
 
+        List<String> flag = new ArrayList<>();
         //flatMap
         List<String> phones = customers.stream().flatMap(p -> p.getPhoneNumber()
                 .stream()).collect(Collectors.toList());
         System.out.println(phones);
+
+        ExecutorService firsE = Executors.newFixedThreadPool(5);
+
+
     }
 }
