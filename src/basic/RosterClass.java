@@ -128,7 +128,7 @@ public class RosterClass {
         // Approach 5: Specify Search Criteria Code with a Lambda Expression
 
         System.out.println("Persons who are eligible for Selective Service " +
-                "(lambda expression):");
+                "(lambdass expression):");
         printPerson(roster,
                 (Person person) ->
                         person.getGender() == Person.GENDER.MALE && person.getAge() >= 18 &&

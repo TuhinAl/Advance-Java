@@ -33,7 +33,7 @@ class Addition{
 
     public static void main(String[] args) {
 
-        //lambda expression
+        //lambdass expression
         B b = (p, q) -> System.out.println(p + q);
         b.add(10, 15);
 
@@ -43,7 +43,7 @@ class Addition{
         b2.add(15, 13);
 
 
-        //lambda expression
+        //lambdass expression
         C c = () -> new Employee();
         c.getEmployee().getInfo();
 

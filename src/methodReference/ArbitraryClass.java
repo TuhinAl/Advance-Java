@@ -19,7 +19,7 @@ public class ArbitraryClass {
         });
         numbers.forEach(System.out::println);
 
-        //lambda expression
+        //lambdass expression
         Collections.sort(numbers, (a, b) -> a.compareTo(b));
         numbers.forEach(System.out::println);
 

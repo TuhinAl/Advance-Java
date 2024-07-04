@@ -42,4 +42,7 @@ public class Main {
 
         printClassInfo(stringClass, hashmapClass, squareClass);
     }
-}
+
+
+    public void test2() {
+
